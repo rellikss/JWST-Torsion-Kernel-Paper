@@ -1,0 +1,50 @@
+\documentclass[twocolumn]{aastex631}
+\usepackage{graphicx}
+\begin{document}
+\title{A Universal Continuum Kernel in JWST Spectra: Evidence for a Torsion-Based Cosmology}
+\author{Brett Harris}
+\date{Generated 2025-12-10}
+\maketitle
+\begin{abstract}
+We present evidence for a reproducible continuum curvature pattern in JWST CEERS, PRIMER, UNCOVER, and JADES spectra. An empirical three-parameter torsion kernel provides consistent fits across all ten NIRSpec / NIRCam / MIRI observing modes. We compare this model to ΛCDM baselines and alternative SEDs, quantify fit quality using χ², AIC, and BIC, and demonstrate stable recovered parameters. 
+\end{abstract}
+\section{Introduction}
+JWST observations have revealed unexpected regularities in continuum shapes at high redshift. This work identifies a universal empirical kernel that captures this structure across multiple independent surveys and spectroscopic configurations.
+\section{The Torsion Continuum Kernel}
+The kernel is defined as:\begin{equation}K(z) = (1+z)^{\alpha} e^{-\beta z} \left[1 + \lambda \sin^{2}\left(\frac{\pi z}{1+z}\right)\right].\end{equation}
+\section{JWST Survey Fits}
+\subsection*{CEERS}
+\begin{figure}[h]
+\includegraphics[width=0.48\textwidth]{figures/CEERS_fit.pdf}
+\caption{Best-fit torsion model and comparison curves for CEERS.}
+\end{figure}
+\subsection*{PRIMER}
+\begin{figure}[h]
+\includegraphics[width=0.48\textwidth]{figures/PRIMER_fit.pdf}
+\caption{Best-fit torsion model and comparison curves for PRIMER.}
+\end{figure}
+\subsection*{UNCOVER}
+\begin{figure}[h]
+\includegraphics[width=0.48\textwidth]{figures/UNCOVER_fit.pdf}
+\caption{Best-fit torsion model and comparison curves for UNCOVER.}
+\end{figure}
+\subsection*{JADES}
+\begin{figure}[h]
+\includegraphics[width=0.48\textwidth]{figures/JADES_fit.pdf}
+\caption{Best-fit torsion model and comparison curves for JADES.}
+\end{figure}
+\section{Parameter Stability}
+\begin{figure}[h]
+\includegraphics[width=0.48\textwidth]{figures/parameter_stability.pdf}
+\caption{Recovered torsion parameter stability across all JWST surveys.}
+\end{figure}
+\section{Statistical Tables}
+\subsection{Model Ranking}
+\input{latex/model_ranking.tex}
+\subsection{Δ Statistics}
+\input{latex/delta_statistics.tex}
+\subsection{Model Summary Block}
+\input{latex/model_summary.tex}
+\bibliographystyle{aasjournal}
+\bibliography{references}
+\end{document}
